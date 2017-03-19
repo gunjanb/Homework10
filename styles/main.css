@@ -1,0 +1,86 @@
+body {
+  font-family: verdana;
+  font-size:100%;
+  margin:auto;
+  background-color:azure;
+}
+
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size:2rem;
+  font-weight: bold;
+  text-align:center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.item h2 {
+   font-size:1.55rem;
+   font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom:1rem;
+}
+
+
+li a {
+  color:black;
+}
+
+
+.item section p a {
+  color:black;
+}
+
+
+.item section {
+  border: 1px dashed black;
+  width: 95%;/*250px;*/
+  margin: 2% ; /*20px*/
+  padding:2rem;
+  text-align: left;
+  background-color: beige;
+}
+
+
+.item li{
+  list-style: square;
+  margin-left: 1rem;
+}
+/*
+.item p div listItems{
+  display: list-item;
+  margin-left: 5rem;
+  list-style: circle;   
+
+}
+*/
+
+
+.item p {
+}
+
+h2 {
+  text-align: center;
+  /*font-size: 3rem;*/
+  font-weight: bold;
+}
+
+.item h3{
+  font-size: 1rem;
+  font-weight:bold;
+ 
+    margin-bottom:1rem;
+}
+
+.item h4{
+  font-weight:bold;
+  margin-top:1rem;
+margin-bottom: 1rem;    
+
+}

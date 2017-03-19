@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Load Time</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+<!--
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+-->
+    <!-- replace with your personal Font Awesome CDN link -->
+    <script src="https://use.fontawesome.com/0aebed106c.js"></script>
+<body>
+    <header>
+      <h1>Strategies for improving load time of web sites</h1>
+    </header>
+
+
+    <div class="container">
+      <p>To know how we can improve the load time of web sites first we need to understand what exactly the Page Speed is. This term essentially refers to the speed with which Web Pages or Media Content is downloaded from website hosting servers and displayed onto the requesting Web browser. So, the Page Load time is the duration between clicking the link and displaying the content of the web page on the requested browser.</p>
+       <div class="item-container">
+            <article class="item">
+                <h2>Does the Speed of Website really matters?</h2>
+            <p>Amazon found out that a 1sec delay in page load time yields:
+                </p>
+              <ul>
+                <li>11% fewer page views</li>
+                <li>16% decrease in customer satisfaction </li>
+                <li>7%loss in conversions.</li>
+              </ul>
+           
+                   <p>Amazon found out that even if the website speed is improved by 100 milliseconds it results in increases revenue of 1%. So, did Walmart, who found a 2% increase in conversions for every 1 second of improvement.
+                   Clearly, we can say that speeding up of your website is critical. In below section, few techniques are discussed to improve the same.</p>
+         </article>
+            <div class="item">
+                <!-- code template for a single item will go here -->
+                <h2>Techniques to improve the Site Speed:</h2>
+              <section>
+                <h3>1.Minimize HTTP Requests:</h3>
+                <p>According to Yahoo, 80% of a Web page’s load time is spent downloading the different parts of the page like images, stylesheets, scripts, Flash, etc. An HTTP request is made for each one of these elements, so the more on-page components, the longer it takes for the page to render.If that is the case we can do it by simplifying our design by:</p>
+                <ul>
+                <li>Streamline the number of elements on your page.</li>
+               <li> Use CSS instead of images whenever possible.</li>
+               <li>  Combine multiple style sheets into one.</li>
+              <li>Reduce scripts and put them at the bottom of the page.</li>
+                </ul>
+              </section>
+              <section>
+                <h3>2.Enable Compression:</h3>
+                <p>Large pages (usually 100kb and more) are bulky and slow to download. The best way to speed their load time is to zip them and technique for doing this called compression.
+                </p>
+<p>Compression reduces the Bandwidth of the page, thereby reducing HTTP response. We can perform zipping by a tool called Gzip. According to Yahoo compression can reduce the load time by 70%. Most of the web servers can compress files in Gzip format before sending the for download, either by calling a third-party module or using built in routines
+</p>
+              </section>
+              <section>
+                <h3>3.Enable Browser caching:</h3>
+                <p>When user visits the website for the first time they have to download the HTML document, stylesheets, JavaScript files and images before it can use the web page. That may take as many as 30 components and 2.4 seconds to download.</p>
+<p>Once the page has been loaded and the different components stored in the user’s cache, only a few components needs to be downloaded for subsequent visits. Usually 40-60% of daily visitors come in with empty cache, so its critical that you make your page fast for these first -time visitors but we need to enable caching to save time off for subsequent visits. 
+</p>
+              </section>
+              <section>
+                <h3>4.Minify Resources:</h3>
+                <p>Unnecessary piece of code adds to the size of your page, it’s important that you eliminate extra spaces, line breaks, and indentation in your code so your pages are as lean as possible It also helps in minifying our own code. Few ways to do it as:</p>
+                <ul>
+                <li>To minify HTML, you can use <a href="https://developers.google.com/speed/pagespeed/insights_extensions">PageSpeed</a>  Insights Chrome Extension to generate an optimized version of your HTML code. Run the analysis against your HTML page and browse to the ‘Minify HTML’ rule. Click on ‘See optimized content’ to get the optimized HTML code.</li>
+                <li>To minify CSS, you can try <a href="http://www.phpied.com/cssmin-js/"> cssmin.js</a></li>
+                <li>To minify JavaScript, try the Closure  <a href="https://developers.google.com/closure/compiler/">Compiler</a> or <a href="http://www.crockford.com/javascript/jsmin.html">JSMin</a>. You can create a build process that uses these tools to minify and rename the development files and save them to a production directory.</li>
+                </ul>
+              </section>
+              <section>
+                <h3>5.Optimize images:</h3>
+                <p>To Optimize images, we can do it by taking care of image sizes, format and src attributes.</p>
+                <h4>Image Size:</h4>
+                <p>Oversized images take longer time to load, so it’s important that we keep web images as small as possible. Use <a href="https://www.crazyegg.com/blog/image-editing-tools/">image</a> editing tools to:</p>
+                <ul>
+                <li>Crop your images to the correct size. For instance, if your page is 570px wide, resize the image to that width. Don’t just upload a 2000px-wide image and set the width parameter (width=”570”). This slows your page load time and creates a bad user experience.</li>
+                <li>Reduce color depth to the lowest acceptable level.</li>
+                <li>Remove image comments.</li>
+                </ul>
+                <h4>Image Format:</h4>
+                <ul>
+                <li>JPEG is the best option.</li>
+                <li>PNG is also good, though older browsers may not fully support it.</li>
+                <li>GIFs should only be used for small or simple graphics (less than 10×10 pixels, or a color palette of 3 or fewer colors) and for animated images.</li>
+                <li>Do not use BMPs or TIFFs.</li>
+                </ul>
+                <h4>Src Attribute:</h4>
+                <p>Once we got the size and format right, we should avoid empty image src codes.When there’s no source in the quotation marks, the browser makes a request to the directory of the page or to the actual page itself. This can add unnecessary traffic to your servers and even corrupt user data.</p>
+              </section>
+              <section>
+                <h3>6.Optimize CSS Delivery:</h3>
+                <p>CSS have the style requirements for the web page and website accesses this information in one of the two ways: -</p>
+                <ul>
+                <li>Inline, which is inserted in the HTML document itself.</li>
+                <li>In an external file, which loads before your page renders.  This is loaded in the head of your HTML Code and is preferable as it reduces the size of your code and creates fewer code duplications.</li>
+                </ul>
+              </section>
+              <section>
+                <h3>7.the Reduce number of plugins you use on your site:</h3>
+                <p>Too many plugins slow your site, create security issues, and often cause crashes and other technical difficulties.</p>
+              </section>
+              <section>
+                <h3>8.Reduce redirects:</h3>
+                <p>Redirects create additional HTTP requests and increase load time. So we should keep them to a minimum.</p>
+              </section>
+              <section>
+                <h3>9.Let the Network Carry the Load: </h3>
+                <p>A content delivery network is a way of taking a websites static files, like CSS, images, and JavaScript, and delivering them through web servers that are closer to the user’s physical location. Shorter proximity amounts to faster load time.</p>
+              </section>
+              <section>
+                <h3>10. Review your hosting service plan:</h3>
+                <p>If you have gone through the checklist above and still find that web performance is impacted, check with your hosting provider to see whether you have shared or dedicated hosting. A shared hosting account often involves sharing server space with dozens of other companies where website speed is impacted by the number of people using the servers. If this is the case, then it may be time to consider a dedicated plan where you have sole access to the server.</p>
+              </section>
+              <section>
+                <h3>11.Code your site for mobile-first quality and speed:</h3>
+                <p> The strategy should be to code for mobile users first and then progressively enhance the experience for tablets and desktops. Doing so will help reduce the number of unnecessary dependencies.</p>
+              </section>
+            </div>
+      </div>
+  </div>
+</body>
+</html>
